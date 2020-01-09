@@ -1,0 +1,1020 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#32968C"
+        android:gravity="top"
+        android:padding="20dp"
+        android:text="Assesment Form"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#01110F"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="start"
+                        android:text="Full Name:"
+                        android:textColor="#01110F"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <EditText
+                        android:id="@+id/edt1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:hint="Enter Your Name"
+                         />
+
+                    <GridLayout
+                        android:layout_width="341dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:columnCount="2"
+                        android:orientation="horizontal"
+                        android:rowCount="1">
+
+                        <TextView
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:gravity="start"
+                            android:text="Father Name:"
+                            android:textColor="#01110F"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/edt2"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:hint="Father Name" />
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="341dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:columnCount="2"
+                        android:orientation="horizontal"
+                        android:rowCount="1">
+
+                        <TextView
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:gravity="start"
+                            android:text="Mother name :"
+                            android:textColor="#01110F"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/edt3"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:hint="Mother Name" />
+
+                    </GridLayout>
+
+
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:columnCount="2"
+                        android:orientation="horizontal"
+                        android:rowCount="1">
+
+                        <TextView
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:gravity="start"
+                            android:text="Date Of Birth:"
+                            android:textColor="#01110F"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/edt4"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:hint="Date of Birth"
+                            android:onClick="selectdob" />
+                    </GridLayout>
+
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:columnCount="2"
+                        android:orientation="horizontal"
+                        android:rowCount="2">
+
+                        <TextView
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:gravity="start"
+                            android:text="Contact No :"
+                            android:textColor="#01110F"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/edt5"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:ems="10"
+                            android:hint="Enter Mobile No"
+                            android:inputType="phone" />
+
+                        <TextView
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:gravity="start"
+                            android:text="Alternate No:"
+                            android:textColor="#01110F"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/edt6"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:ems="10"
+                            android:hint="Enter Alternate No"
+                            android:inputType="phone" />
+                    </GridLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="start"
+                        android:text="Email :"
+                        android:textColor="#01110F"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/edt7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:ems="10"
+                        android:hint="Enter Email Address"
+                        android:inputType="textEmailAddress" />
+
+                    <TextView
+                        android:id="@+id/tv3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="start"
+                        android:text="Gender :"
+                        android:textColor="#01110F"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:columnCount="3"
+                        android:orientation="vertical"
+                        android:rowCount="1">
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/male"
+                                android:layout_width="92dp"
+                                android:layout_height="wrap_content"
+                                android:layout_row="0"
+                                android:layout_column="0"
+                                android:layout_marginTop="20dp"
+                                android:onClick="onRadioButtonClicked"
+                                android:text="Male"
+                                android:textSize="20sp" />
+
+                            <RadioButton
+                                android:id="@+id/female"
+                                android:layout_width="112dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:onClick="onRadioButtonClicked"
+                                android:text="Female"
+                                android:textSize="20sp" />
+
+                            <RadioButton
+                                android:id="@+id/other"
+                                android:layout_width="97dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:onClick="onRadioButtonClicked"
+                                android:text="Other"
+                                android:textSize="20sp" />
+
+                        </RadioGroup>
+
+
+                    </GridLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="start"
+                        android:text="Address : "
+                        android:textColor="#01110F"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/edt8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:hint="House/Flat No. , Society Name" />
+
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_gravity="start"
+                        android:columnCount="2"
+                        android:orientation="horizontal"
+                        android:rowCount="3">
+
+                        <EditText
+                            android:id="@+id/edt9"
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:hint="Landmark" />
+
+                        <EditText
+                            android:id="@+id/edt10"
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:hint="Village/Town" />
+
+                        <EditText
+                            android:id="@+id/edt11"
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:hint="Tehsil" />
+
+                        <EditText
+                            android:id="@+id/edt12"
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:hint="District" />
+
+                        <EditText
+                            android:id="@+id/edt13"
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:hint="State" />
+
+                        <EditText
+                            android:id="@+id/edt14"
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:hint="Pincode"
+                            android:inputType="number"
+                            android:maxLength="6" />
+                    </GridLayout>
+
+
+                    <TextView
+                        android:id="@+id/tv6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="start"
+                        android:text="Marital Status :"
+                        android:textColor="#01110F"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:columnCount="2"
+                        android:orientation="vertical"
+                        android:rowCount="2">
+
+
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/married"
+                                android:layout_width="132dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:onClick="onRadioButtonClicked1"
+                                android:text="Married"
+                                android:textSize="20sp" />
+
+                            <RadioButton
+                                android:id="@+id/single"
+                                android:layout_width="114dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:onClick="onRadioButtonClicked1"
+                                android:text="Single"
+                                android:textSize="20sp" />
+
+
+                            <RadioButton
+                                android:id="@+id/divorced"
+                                android:layout_width="134dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:onClick="onRadioButtonClicked1"
+                                android:text="Divorced"
+                                android:textSize="20sp" />
+
+
+                        </RadioGroup>
+
+
+                    </GridLayout>
+
+
+                    <TextView
+                        android:id="@+id/tv8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="start"
+                        android:text="Select ID Proof :"
+                        android:textColor="#01110F"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:columnCount="4"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:rowCount="3">
+
+                        <TableRow>
+
+                            <CheckBox
+                                android:id="@+id/aadhar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:onClick="onCheckBox"
+                                android:text="Aadhar Card"
+                                android:textSize="20sp" />
+
+                            <CheckBox
+                                android:id="@+id/voter"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:onClick="onCheckBox"
+                                android:text="Voter ID"
+                                android:textSize="20sp" />
+
+
+                        </TableRow>
+
+                        <TableRow>
+
+                            <CheckBox
+                                android:id="@+id/driving"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:onClick="onCheckBox"
+                                android:text="Driving License"
+                                android:textSize="20sp" />
+
+                            <CheckBox
+                                android:id="@+id/bpl"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:onClick="onCheckBox"
+                                android:text="BPL Card"
+                                android:textSize="20sp" />
+
+
+                        </TableRow>
+
+                        <TableRow>
+
+                            <CheckBox
+                                android:id="@+id/ration"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:onClick="onCheckBox"
+                                android:text="Ration Card"
+                                android:textSize="20sp" />
+
+                            <CheckBox
+                                android:id="@+id/pan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:onClick="onCheckBox"
+                                android:text="PAN Card"
+                                android:textSize="20sp" />
+
+                        </TableRow>
+
+                        <TableRow>
+
+                            <CheckBox
+                                android:id="@+id/passport"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:onClick="onCheckBox"
+                                android:text="Passport"
+                                android:textSize="20sp" />
+
+                            <CheckBox
+                                android:id="@+id/narega"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:onClick="onCheckBox"
+                                android:text="Narega Card"
+                                android:textSize="20sp" />
+
+                        </TableRow>
+
+                        <TableRow>
+
+                            <CheckBox
+                                android:id="@+id/other1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:onClick="onCheckBox"
+                                android:text="Other"
+                                android:textSize="20sp" />
+
+
+                        </TableRow>
+
+
+                    </TableLayout>
+
+
+                    <TextView
+                        android:id="@+id/tv11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20sp"
+                        android:gravity="start"
+                        android:text="Religion :"
+                        android:textColor="#01110F"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:columnCount="2"
+                        android:orientation="horizontal"
+                        android:rowCount="4">
+
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/hindu"
+                                android:layout_width="86dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:onClick="onRadioButtonClicked2"
+                                android:text="Hindu"
+                                android:textSize="20sp" />
+
+                            <RadioButton
+                                android:id="@+id/muslim"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:onClick="onRadioButtonClicked2"
+                                android:text="Muslim"
+                                android:textSize="20sp" />
+                            <RadioButton
+                                android:id="@+id/sikh"
+                                android:layout_width="86dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:onClick="onRadioButtonClicked2"
+                                android:text="Sikh"
+                                android:textSize="20sp" />
+
+                            <RadioButton
+                                android:id="@+id/christian"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:onClick="onRadioButtonClicked2"
+                                android:text="Christian"
+                                android:textSize="20sp" />
+                            <RadioButton
+                            android:id="@+id/jain"
+                            android:layout_width="86dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:onClick="onRadioButtonClicked2"
+                            android:text="Jain"
+                            android:textSize="20sp" />
+
+                            <RadioButton
+                                android:id="@+id/buddh"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:onClick="onRadioButtonClicked2"
+                                android:text="Buddhist"
+                                android:textSize="20sp" />
+
+
+                            <RadioButton
+                                android:id="@+id/other3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:onClick="onRadioButtonClicked2"
+                                android:text="Other"
+                                android:textSize="20sp" />
+                        </RadioGroup>
+                    </GridLayout>
+
+
+
+
+                    <TextView
+                        android:id="@+id/tv12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20sp"
+                        android:gravity="start"
+                        android:text="Cast Category :"
+                        android:textColor="#01110F"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+
+                        android:columnCount="4"
+                        android:orientation="vertical"
+                        android:rowCount="1">
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/open"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:onClick="onRadioButtonClicked3"
+                                android:text="General"
+                                android:textSize="20sp" />
+
+                            <RadioButton
+                                android:id="@+id/obc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:onClick="onRadioButtonClicked3"
+                                android:text="OBC"
+                                android:textSize="20sp" />
+
+                            <RadioButton
+                                android:id="@+id/sc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:onClick="onRadioButtonClicked3"
+                                android:text="SC"
+                                android:textSize="20sp" />
+
+                            <RadioButton
+                                android:id="@+id/st"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:onClick="onRadioButtonClicked3"
+                                android:text="ST"
+                                android:textSize="20sp" />
+
+                            <RadioButton
+                                android:id="@+id/other4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:onClick="onRadioButtonClicked3"
+                                android:text="Other"
+                                android:textSize="20sp" />
+
+                        </RadioGroup>
+
+                    </GridLayout>
+
+                    <TextView
+                        android:id="@+id/tv15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="start"
+                        android:text="Occupation :"
+                        android:textColor="#01110F"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:columnCount="2"
+                        android:orientation="vertical"
+                        android:rowCount="3">
+
+                        <CheckBox
+                            android:id="@+id/emp_agri"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:onClick="onCheckBox2"
+                            android:text="Agriculture"
+                            android:textSize="20sp" />
+
+                        <CheckBox
+                            android:id="@+id/emp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:onClick="onCheckBox2"
+                            android:text="Non-Agriculture"
+                            android:textSize="20sp" />
+
+                        <CheckBox
+                            android:id="@+id/s_emp_agri"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:onClick="onCheckBox2"
+                            android:text="Employed"
+                            android:textSize="20sp" />
+
+                        <CheckBox
+                            android:id="@+id/s_emp_no_agri"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:onClick="onCheckBox2"
+                            android:text="Self Employed"
+                            android:textSize="20sp" />
+
+                        <CheckBox
+                            android:id="@+id/unemp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:onClick="onCheckBox2"
+                            android:text="Unemployed"
+                            android:textSize="20sp" />
+
+                        <CheckBox
+                            android:id="@+id/std"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:onClick="onCheckBox2"
+                            android:text="Student"
+                            android:textSize="20sp" />
+
+                    </GridLayout>
+
+                    <TextView
+                        android:id="@+id/tv10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="start"
+                        android:text="Your Refrence :"
+                        android:textColor="#01110F"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:columnCount="2"
+                        android:orientation="vertical"
+                        android:rowCount="4">
+
+                        <CheckBox
+                            android:id="@+id/pradhan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:onClick="onCheckBox1"
+                            android:text="Pradhan"
+                            android:textSize="20sp" />
+
+                        <CheckBox
+                            android:id="@+id/friend"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:onClick="onCheckBox1"
+                            android:text="Friend"
+                            android:textSize="20sp" />
+
+                        <CheckBox
+                            android:id="@+id/community"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:onClick="onCheckBox1"
+                            android:text="Community Member"
+                            android:textSize="20sp" />
+
+                        <CheckBox
+                            android:id="@+id/teachers"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:onClick="onCheckBox1"
+                            android:text="Teachers/Principle"
+                            android:textSize="20sp" />
+
+
+                        <CheckBox
+                            android:id="@+id/poster"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:onClick="onCheckBox1"
+                            android:text="Poster"
+                            android:textSize="20sp" />
+
+                        <CheckBox
+                            android:id="@+id/net"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:onClick="onCheckBox1"
+                            android:text="Internet"
+                            android:textSize="20sp" />
+
+                        <CheckBox
+                            android:id="@+id/advertise"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:onClick="onCheckBox1"
+                            android:text="Advertisement"
+                            android:textSize="20sp" />
+
+                        <CheckBox
+                            android:id="@+id/other2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:onClick="onCheckBox1"
+                            android:text="Other"
+                            android:textSize="20sp" />
+
+
+                    </GridLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="start"
+                        android:text="Refer to Other :"
+                        android:textColor="#01110F"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:columnCount="3"
+                        android:orientation="horizontal"
+                        android:rowCount="3">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:gravity="start"
+
+                            android:text="1)"
+                            android:textColor="#BC01110F"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/edt15"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:hint="Enter Name" />
+
+                        <EditText
+                            android:id="@+id/edt16"
+                            android:layout_width="184dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:hint="Mobile No"
+                            android:inputType="number" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:gravity="start"
+                            android:text="2)"
+                            android:textColor="#BC01110F"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/edt17"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:hint="Enter Name" />
+
+                        <EditText
+                            android:id="@+id/edt18"
+                            android:layout_width="184dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:hint="Mobile No"
+                            android:inputType="number" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:gravity="start"
+                            android:text="3)"
+                            android:textColor="#BC01110F"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/edt19"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:hint="Enter Name " />
+
+                        <EditText
+                            android:id="@+id/edt20"
+                            android:layout_width="184dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:hint="Mobile No"
+                            android:inputType="number" />
+                    </GridLayout>
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:columnCount="1"
+                        android:orientation="vertical"
+                        android:rowCount="4">
+
+                        <TableRow>
+
+                            <Button
+                                android:id="@+id/Insert"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Submit Data"
+                                android:textAllCaps="true" />
+
+                        </TableRow>
+
+                        <TableRow>
+
+                            <Button
+                                android:id="@+id/Update"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Update Data"
+                                android:textAllCaps="true" />
+
+                        </TableRow>
+
+                        <TableRow>
+
+                            <Button
+                                android:id="@+id/Delete"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Delete Data"
+                                android:textAllCaps="true" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <Button
+                                android:id="@+id/ViewAll"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="View Data"
+                                android:textAllCaps="true" />
+                        </TableRow>
+
+
+                    </TableLayout>
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
